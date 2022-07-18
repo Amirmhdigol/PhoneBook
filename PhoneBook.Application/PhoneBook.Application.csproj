@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="PhoneBooks\Create\" />
+    <Folder Include="PhoneBooks\Edit\" />
+    <Folder Include="PhoneBooks\Delete\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	     <PackageReference Include="UAParser" Version="3.1.47" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\phoneBook.Common.Domain\phoneBook.Common.Domain.csproj" />
+    <ProjectReference Include="..\PhoneBook.Domain\PhoneBook.Domain.csproj" />
+    <ProjectReference Include="..\PhoneBook.Query\PhoneBook.Query.csproj" />
+  </ItemGroup>
+
+</Project>
